@@ -1,0 +1,24 @@
+package springmvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class RedirectController {
+	
+	@RequestMapping("/first")
+	public String first()
+	{
+		System.out.println("This is first controller....");
+		
+		return "";
+	}
+	
+	@RequestMapping("/second")
+	public String second()
+	{
+		System.out.println("This is second controller...");
+		
+		return "";
+	}
+}

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Mar 02 18:48:58 IST 2023
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\sanke\\.m2\\repository\\org\\springframework\\spring-web\\5.3.22\\spring-web-5.3.22.jar=WEB-INF/lib/spring-web-5.3.22.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\sanke\\.m2\\repository\\org\\springframework\\spring-web\\5.2.21.RELEASE\\spring-web-5.2.21.RELEASE.jar=WEB-INF/lib/spring-web-5.2.21.RELEASE.jar

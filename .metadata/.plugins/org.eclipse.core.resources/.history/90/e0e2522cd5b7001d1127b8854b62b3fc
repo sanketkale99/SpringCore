@@ -1,0 +1,38 @@
+package springmvc.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HomeController {
+	
+	@RequestMapping("/home")		//Annotation for mapping web requests, this method works when /home fires in web browser
+	public String home(Model model)
+	{
+		System.out.println("This is home page");
+		model.addAttribute("name", "Abhishek Gavhane");
+		List<String> friends=new ArrayList<String>();
+		friends.add("Abhishek Gavhane");
+		friends.add("Mayur Shinde");
+		friends.add("Aditya Ghyar");
+		model.addAttribute("friends",friends);
+		return "index";		//retrun index view which is a .jsp file 
+	}
+	
+	public ModelAndView about()
+	{
+		System.out.println("This is help controller...");
+		//creating model AND view object
+		ModelAndView modelAndView=new ModelAndView();
+		modelAndView.addObject("address","Shivajinagar Pune");
+		modelAndView.addObject("pincode","411005");
+		modelAndView.setViewName("help);
+		return modelAndView;
+	}
+	
+}

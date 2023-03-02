@@ -1,0 +1,21 @@
+package springmvc.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class RedirectController {
+	
+	public String first()
+	{
+		System.out.println("This is first controller....");
+		
+		return "";
+	}
+	
+	public String second()
+	{
+		System.out.println("This is second controller...");
+		
+		return "";
+	}
+}

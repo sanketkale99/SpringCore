@@ -1,0 +1,40 @@
+package springmvc.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class ContactController {
+
+	@RequestMapping("/contact")
+	public String showForm()
+	{
+		return "contact";
+	}
+	
+						//method-1
+	/*
+	@RequestMapping(path="/processform", method = RequestMethod.POST )
+	public String formHandler(HttpServletRequest request)
+	{
+		String uname = request.getParameter("userName");
+		System.out.println("User Name is : "+uname);
+		String email = request.getParameter("email");
+		System.out.println("Email is : "+email);
+		String pass = request.getParameter("password");
+		System.out.println("Password is : "+pass);
+		return "";
+	}
+	*/
+	
+	@RequestMapping(path="/processform", method = RequestMethod.POST )
+	public String formHandler(HttpServletRequest request)
+	{
+		
+		return "";
+	}
+	}
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"   
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+  															
+  		<!--==================================================================-->
+  																				<!--First type of bean-->
+ 	<!--Used Value as a tag and class as a name-->
+ 	<!--this is our beans-->
+ 	<bean class="com.spring.Student" name="student1">	
+ 		
+ 		<property name="sId">  <!--assigned values to bean/pojos-->
+ 			<value>101 </value> <!--used value as a tag-->
+ 		</property>
+ 		
+ 		<property name="sName"> 
+ 			<value>Sanket Kale</value>
+ 		</property>		
+ 		
+ 		<property name="Addr"> 
+ 			<value>Pune </value>
+ 		</property>	
+ 	</bean>
+ 	 		<!--==================================================================-->
+ 																<!--Second type of bean-->
+ 	<!--Used value as a attribute-->
+ 	<bean class="com.spring.Student" name="student2">
+ 		
+ 		<property name="sId" value="102" />  <!--used values as attribute ;; use schema p -->
+ 		
+ 		<property name="sName" value="Aniket Lanke" /> 
+ 		
+ 		<property name="Addr" value="Mumbai" /> 
+ 		
+ 	</bean>
+ 			<!--==================================================================-->
+ 														<!--Thirs type of bean // used p Schema -->
+ 	<bean class="com.spring.Student" name="student3" p:sId="103" p:sName="Aditya Ghyar" p:Addr="Nagar" />					
+ 	
+ </beans>
+ 
+ 

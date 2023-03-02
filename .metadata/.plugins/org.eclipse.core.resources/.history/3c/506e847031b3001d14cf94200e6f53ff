@@ -1,0 +1,24 @@
+package com.spring.javaconfig;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Student {
+	
+	@Autowired
+	private Department dept;
+	
+	
+
+	public Student(Department dept) {
+		super();
+		this.dept = dept;
+	}
+
+
+
+	public void study()
+	{
+		System.out.println("student is studying");
+	}
+
+}

@@ -1,0 +1,20 @@
+package springmvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+	
+	@RequestMapping("/home")		//Annotation for mapping web requests, this method works when /home fires in web browser
+	public String home(Model model)
+	{
+		System.out.println("This is home page");
+		model.addAttribute("name", "Abhishek Gavhane");
+		return "index";		//retrun index view which is a .jsp file 
+	}
+	
+	
+		
+}

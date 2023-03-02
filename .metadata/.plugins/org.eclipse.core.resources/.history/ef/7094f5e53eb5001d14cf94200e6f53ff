@@ -1,0 +1,5 @@
+package com.spring.orm.entity;
+
+public class Student {
+
+}

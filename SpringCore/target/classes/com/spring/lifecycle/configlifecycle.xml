@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	 xmlns:p="http://www.springframework.org/schema/p"   
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 https://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!--<context:annotation-config />-->	 <!--used to enable all annotations -->
+												
+		<!--<bean class="com.spring.lifecycle.Employee" name="emp1"
+			init-method="init" destroy-method="destroy">
+			<property name="empSal" value="10000" />
+		</bean>-->
+		
+		<!--<bean class="com.spring.lifecycle.Employee1" name="emp2">
+			<property name="empId" value="10" />
+			<property name="eName" value="sanket" />
+		</bean>-->
+		
+		<bean class="com.spring.lifecycle.Employee2" name="emp3">
+			<property name="empCity" value="Pune" />
+			<property name="eSal" value="1000" />
+		</bean>
+		
+		<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />   <!--in main class click cntl+shift+t and search for CommonBeanPostProcessor and copy the path and class name-->
+  		
+ </beans>
+ 
+ 
