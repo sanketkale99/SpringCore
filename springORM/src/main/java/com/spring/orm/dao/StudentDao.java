@@ -48,11 +48,11 @@ public class StudentDao {
 		this.hibernateTemplate.update(student);
 	}
 	
-	
+//	getter
 	public HibernateTemplate getHibernateTemplate() {
 		return hibernateTemplate;
 	}
-
+//setter
 	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
 		this.hibernateTemplate = hibernateTemplate;
 	}

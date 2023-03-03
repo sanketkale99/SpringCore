@@ -14,6 +14,7 @@
   		</bean>		
   											
   		<bean class="com.spring.reference.A" name="aref" p:x="20" p:ob-ref="bref" /> 
+  			
   			<!--<property name="x" value="50" />-->
   			<!--<property name="ob" >
   				<ref bean="bref" />

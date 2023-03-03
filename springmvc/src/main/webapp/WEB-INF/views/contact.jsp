@@ -23,10 +23,13 @@
 	<div class="container mt-5">
 		<h3 class="text-center">Registration Form</h3>
 		<p class="text-center"> ${description } </p>
+		
+		
 			<form action="processform" method="post">
 
 			<div class="form-group">
-				<label for="userName">User Name</label> <input type="text"
+				<label for="userName">User Name</label> 
+				<input type="text"
 					class="form-control" id="userName" aria-describedby="emailHelp"
 					name="userName" placeholder="Enter User Name">
 			</div>

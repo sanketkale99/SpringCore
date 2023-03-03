@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import springmvc.model.User;
 
-@Repository				//use to access objects 
+@Repository				//Spring will automatically create an instance of that class as a bean
 public class UserDao {
 
 	@Autowired

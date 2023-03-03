@@ -30,7 +30,7 @@ public class App
 //      //insert query
 //      String query="insert into student values(?,?,?)";
 //      //fire query
-//      int result = template.update(query, 11, "Aditya Ghyar", "Budhavar Peth");
+//      int result = template.update(query, 11, "Aditya Ghyar", "Pune");
 //      System.out.println(result+ " Record Inserted");
       
         //insert new record

@@ -17,6 +17,7 @@ import springmvc.service.UserService;
 @Controller
 public class ContactController {
 
+	
 	@Autowired
 	private UserService userService;
 	
@@ -86,6 +87,9 @@ public class ContactController {
 	public String formHandler(@ModelAttribute User user,  Model model){
 		
 		System.out.println(user);
+		if(user.getUserName().isBlank()) {
+			return "redirect:/contact";
+		}
 		int id=this.userService.createUser(user);
 		model.addAttribute("msg", "User Created with id "+ id);
 		return "success";

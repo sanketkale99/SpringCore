@@ -47,17 +47,23 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.spring.search"/>
+			<item value="com.spring.search.springmvcsearch"/>
 			<item value="com.spring.mvc"/>
 			<item value="com.spring.orm"/>
 			<item value="com.spring.jdbc"/>
 			<item value="com.spring.jdbc.springJDBC"/>
 		</list>
 		<list key="groupId">
+			<item value="com.spring.search"/>
 			<item value="com.spring.mvc"/>
 			<item value="com.spring.orm"/>
 			<item value="com.spring.jdbc"/>
 		</list>
 		<list key="artifactId">
+			<item value="springmvcsearch2"/>
+			<item value="SpringmvcSearch"/>
+			<item value="springmvcsearch"/>
 			<item value="springmvc2"/>
 			<item value="springMVC"/>
 			<item value="springORM"/>

@@ -31,6 +31,6 @@ public class RedirectController {
 	{
 		System.out.println("This is second controller...");
 		
-		return "";
+		return "contact";
 	}
 }

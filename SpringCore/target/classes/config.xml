@@ -40,7 +40,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
  		
  	</bean>
  			<!--==================================================================-->
- 														<!--Thirs type of bean // used p Schema -->
+ 														<!--Third type of bean // used p Schema -->
  	<bean class="com.spring.Student" name="student3" p:sId="103" p:sName="Aditya Ghyar" p:Addr="Nagar" />					
  	
  </beans>
